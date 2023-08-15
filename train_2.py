@@ -12,6 +12,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
+
 #print("參數範例：3160-苗栗 4080-嘉義 2023/08/12")
 #input_startStation = str(input('輸入起站：'))
 #input_endStation = str(input('輸入迄站：'))
