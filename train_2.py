@@ -13,10 +13,10 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 
-#print("參數範例：3160-苗栗 4080-嘉義 2023/08/12")
-#input_startStation = str(input('輸入起站：'))
-#input_endStation = str(input('輸入迄站：'))
-#input_rideDate = str(input('輸入日期yyyy/mm/dd：'))
+print("參數範例：3160-苗栗 4080-嘉義 2023/08/12")
+input_startStation = str(input('輸入起站：'))
+input_endStation = str(input('輸入迄站：'))
+input_rideDate = str(input('輸入日期yyyy/mm/dd：'))
 
 print (sys.argv)
 argv_len = len(sys.argv)
@@ -38,9 +38,9 @@ if argv_len == 4:
     is_run = True
 else :
     #print("確認參數如：3300-臺中 3160-苗栗 2023/09/09")
-    input_s1 = "4080-嘉義"
-    input_s2 = "3160-苗栗"
-    input_ymd = "2023/09/09"
+    input_s1 = input_startStation
+    input_s2 = input_endStation
+    input_ymd = input_rideDate
     is_run = True
 
 #print(is_run)
